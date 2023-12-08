@@ -1,17 +1,8 @@
-w = input("Введіть слово: ").replace(" ", "")
+my_dict = {
+    "4090": "[12 жовтня 2022 року]",
+    "3090": "[24 вересня 2020 року]",
+    "2080 ti": "[20 вересня 2018 року]",
+    "980 ti": "[1 червня 2015 року]",
+}
 
-s = int(input("Введіть число через скільки буде братися буква: "))
-
-t1 = ''.join(w[i] for i in range(1, len(w), 2))
-t2 = ''.join(w[i] for i in range(1, len(w), 3))
-t3 = ''.join(w[i] for i in range(2, len(w), 4))
-t4 = ''.join(w[i] for i in range(3, len(w), 5))
-
-if s == 1:
-    print("Через одну букву: ", t1)
-elif s == 2:
-    print("Через дві букви: ", t2)
-elif s == 3:
-    print("Через три букви: ", t3)
-else:
-    print("Через чотири букви: ", t4)
+print(my_dict["980 ti"])
